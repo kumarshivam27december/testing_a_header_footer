@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+<title>References</title>
+<style>
+    * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: cursive;
+}
+
+a {
+text-decoration: none;
+}
+
+li {
+list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+background-color: teal;
+color: #fff;
+}
+
+.nav-links a {
+color: #fff;
+}
+
+/* LOGO */
+.logo {
+font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+display: flex;
+gap: 1em;
+font-size: 18px;
+}
+
+.menu li:hover {background-color: #4c9e9e;
+border-radius: 5px;
+transition: 0.3s ease;
+}
+
+.menu li {
+padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+position: relative; 
+}
+
+.dropdown {
+background-color: rgb(1, 139, 139);
+padding: 1em 0;
+position: absolute; /*WITH RESPECT TO PARENT*/
+display: none;
+border-radius: 8px;
+top: 35px;
+}
+
+.dropdown li + li {
+margin-top: 10px;
+}
+
+.dropdown li {
+padding: 0.5em 1em;
+width: 8em;
+text-align: center;
+}
+
+.dropdown li:hover {
+background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+display: block;
+}
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+    } 
+    
+    /* HAMBURGER MENU */
+    .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    }
+    
+    /* APPLYING MEDIA QUERIES */
+    @media (max-width: 768px) {
+    .menu {
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    }
+    
+    .menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+    }
+    
+    menu li + li {
+    margin-top: 12px;
+    }
+    
+    input[type=checkbox]:checked ~ .menu {
+    display: block;
+    }
+    
+    .hamburger {
+    display: block;
+    }
+    
+    .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+    }
+    
+    .dropdown li:hover {
+    background-color: #4c9e9e;
+    }
+    }
+    footer {
+        background-color: #f0f0f0; /* Set background color */
+        padding: 10px; /* Add some padding around the footer */
+        text-align: center; /* Center align the footer content */
+        position: fixed; /* Fix the footer to the bottom of the page */
+        bottom: 0; /* Position the footer at the bottom of the page */
+        width: 100%; /* Set the footer width to 100% */
+    }
+    
+    /* Define styles for footer content */
+    footer p {
+        margin: 5px 0; /* Add some margin between paragraphs within the footer */
+    }
+    .class1{
+        background-color: rgb(208, 208, 230);
+        font-size: 25px;
+        
+        <!-- background-image: url(image1.jpg); -->
+      }
+      a {
+        text-decoration: none;
+        font-size: x-large;
+        background-color: none;
+        
+        cursor: pointer;
+      }
+      .class2{
+        background-color: rgb(208, 208, 230);
+        font-size: 25px;
+      }
+      .class3{
+        background-color: rgb(208, 208, 230);
+        font-size: 25px;
+      }
+      .class4{
+        background-color: rgb(208, 208, 230);
+        font-size: 25px;
+      }
+      .class5{
+        background-color: rgb(208, 208, 230);
+        font-size: 25px;
+      }
+      .class6{
+        background-color: rgb(208, 208, 230);
+        font-size: 25px;
+      }
+</style>
+</head>
+
+<body>
+<nav class="navbar">
+<!-- LOGO -->
+<div class="logo">Food Resource website</div>
+
+<!-- NAVIGATION MENU -->
+<ul class="nav-links">
+
+<!-- USING CHECKBOX HACK -->
+<input type="checkbox" id="checkbox_toggle" />
+<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+<!-- NAVIGATION MENUS -->
+<div class="menu">
+
+<li><a href="main.html">Home</a></li>
+<li><a href="aboutus.html">About</a></li>
+
+<li class="services">
+<a href="reference.html">References</a>
+
+<!-- DROPDOWN MENU -->
+<!-- <ul class="contacts">
+
+</ul> -->
+
+</li>
+<li><a href="charts.pdf">Charts</a></li>
+<li><a href="https://www.linkedin.com/in/2004shivamkumar/">Contact</a></li>
+</div>
+</ul>
+</nav>
+<!-- <h1 font-size="25px">
+    Food resource production
+  </h1> -->
+  <p class="class1">
+    Welcome to our food resource production website!
+     We are passionate about providing valuable information 
+     and resources related to food production, sustainability, 
+     and agriculture. Our "About" section aims to give you an overview of our website and what we offer.
+  </p>
+  <h3>
+    Who We Are:
+  </h3>
+  <p class="class2">
+We are a team of experts in the field of food production and sustainability. 
+Our team is composed of agronomists, nutritionists, environmentalists, 
+and other professionals who are dedicated to promoting sustainable food production practices 
+and helping people make informed decisions about their food choices.
+  </p>
+  <h3>
+    Our Mission:
+  </h3>
+  <p class="class3">
+    Our mission is to raise awareness about the importance of sustainable food production methods and 
+    their impact on the environment, health, and society. 
+    We aim to provide accurate and up-to-date information about various aspects of food production, 
+    including crop cultivation, animal husbandry, food processing, and distribution.
+  </p>
+  <h3>
+    What We Do:
+  </h3>
+  <p class="class4">
+    Our website features a wide range of articles, guides, 
+    and resources related to food production and sustainability. 
+    We cover topics such as regenerative agriculture, organic farming, 
+    greenhouse gas emissions, water conservation, biodiversity, food waste reduction, and more. 
+    Our content is carefully curated to provide evidence-based information and practical tips for individuals, 
+    farmers, and policymakers interested in sustainable food production.
+  </p>
+  <h3>
+    Why We Do It:
+  </h3>
+  <p class="class5">
+    We believe that sustainable food production is crucial for addressing global 
+    challenges such as climate change, food insecurity, and environmental degradation. 
+    By promoting sustainable practices, we aim to support the health of our planet, 
+    communities, and future generations. We are committed to empowering individuals and organizations with knowledge and 
+    resources to make informed decisions that positively impact food production and sustainability.
+  </p>
+  <h3>
+    How to Use Our Website:
+  </h3>
+  <p class="class6">
+    Our website is designed to be user-friendly and informative. 
+    You can explore our various sections to learn more about different aspects of food production, 
+    access resources such as articles, guides, infographics, and videos, and stay updated with the latest news and 
+    trends in the field of food production and sustainability. 
+    You can also connect with us through our contact form or social media channels 
+    if you have any questions or would like to collaborate.
+  </p>
+<footer>
+    
+    <p>Copyright © 2023-2024 
+        <br>
+
+        KOCFZ @ShivamKumar@AdityaPathaniya@Hanshul.<br>
+		All Rights are reserved</p>
+</footer>
+</body>
+
+</html>
